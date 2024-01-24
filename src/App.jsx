@@ -5,6 +5,8 @@ import NavBar from "./componentes/NavBar/NavBar";
 import Atros from "./componentes/Astros/Astros";
 import Astros from "./componentes/Astros/Astros";
 import MyButtonUI from "./componentes2/MyButtonUI/LabelBottomNavigation";
+import MyCard from "./componentes/About/Card/MyCard";
+
 const App = () => {
   const links = [
     { id: 1, name: "Home", href: "/" },
@@ -17,7 +19,7 @@ const App = () => {
       <NavBar links={links} text="hello" />
       <Routes>
         <Route path="/" element={<Button name={tesxtBtn} />} />
-        <Route path="/about" element={<MyButtonUI />} />
+        <Route path="/about" element={<MyCard />} />
         <Route path="/astro" element={<Astros />}></Route>
       </Routes>
     </>
