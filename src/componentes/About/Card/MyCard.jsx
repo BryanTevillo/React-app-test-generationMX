@@ -8,7 +8,8 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import cardImage from "../../../assets/bryan2.jpg";
-
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export default function MyCard({ names, profile, city, state, number, email }) {
   return (
     <Card sx={{ maxWidth: 430 }}>
@@ -55,14 +56,15 @@ export default function MyCard({ names, profile, city, state, number, email }) {
             target="_blank"
             href="https://github.com/BryanTevillo"
           >
-            GitHub
+            <GitHubIcon></GitHubIcon>
           </Button>
+
           <Button
             size="small"
             target="_blank"
             href="https://www.linkedin.com/in/bryan-tevillo/"
           >
-            LinkedIn
+            <LinkedInIcon></LinkedInIcon>
           </Button>
         </CardActions>
       </CardActionArea>
