@@ -1,0 +1,17 @@
+.navBar {
+  background-color: red;
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: black;
+}
+
+.navBar-container {
+  position: absolute;
+  top: 0%;
+  margin: 0%;
+  padding: 0%;
+  left: 0%;
+}
