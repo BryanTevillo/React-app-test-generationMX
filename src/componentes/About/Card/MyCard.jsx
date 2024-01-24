@@ -12,7 +12,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 export default function MyCard({ names, profile, city, state, number, email }) {
   return (
-    <Card sx={{ maxWidth: 430 }}>
+    <Card sx={{ maxWidth: 430, backgroundColor: "#EAE0C8" }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -52,19 +52,21 @@ export default function MyCard({ names, profile, city, state, number, email }) {
         </CardContent>
         <CardActions>
           <Button
+            sx={{ color: "black" }}
             size="small"
             target="_blank"
             href="https://github.com/BryanTevillo"
           >
-            <GitHubIcon></GitHubIcon>
+            <GitHubIcon fontSize="large"></GitHubIcon>
           </Button>
 
           <Button
+            sx={{ color: "blue" }}
             size="small"
             target="_blank"
             href="https://www.linkedin.com/in/bryan-tevillo/"
           >
-            <LinkedInIcon></LinkedInIcon>
+            <LinkedInIcon fontSize="large"></LinkedInIcon>
           </Button>
         </CardActions>
       </CardActionArea>

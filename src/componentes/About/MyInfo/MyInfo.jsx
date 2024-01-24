@@ -6,7 +6,7 @@ import Divider from "@mui/material/Divider";
 
 export default function MyInfo({ info }) {
   return (
-    <Card sx={{ minWidth: 275 }}>
+    <Card sx={{ minWidth: 275, backgroundColor: "#EAE0C8" }}>
       <CardContent>
         <Typography variant="h5" component="div" color="red">
           Sobre Mi
