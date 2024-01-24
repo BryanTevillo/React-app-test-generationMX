@@ -1,7 +1,9 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Divider from "@mui/material/Divider";
@@ -21,6 +23,7 @@ export default function MyCard({ names, profile, city, state, number, email }) {
           <Typography gutterBottom variant="h4" component="div">
             {names}
           </Typography>
+
           <Typography
             gutterBottom
             variant="h6"
@@ -46,6 +49,22 @@ export default function MyCard({ names, profile, city, state, number, email }) {
             Correo: {email}
           </Typography>
         </CardContent>
+        <CardActions>
+          <Button
+            size="small"
+            target="_blank"
+            href="https://github.com/BryanTevillo"
+          >
+            GitHub
+          </Button>
+          <Button
+            size="small"
+            target="_blank"
+            href="https://www.linkedin.com/in/bryan-tevillo/"
+          >
+            LinkedIn
+          </Button>
+        </CardActions>
       </CardActionArea>
     </Card>
   );
